@@ -1,0 +1,19 @@
+{
+  "name": "e-commerce-xt",
+  "version": "1.0.0",
+  "description": "full web app, react + node JS",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nonameb3/E-Commerce-XT.git"
+  },
+  "author": "waraphon roonnapai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nonameb3/E-Commerce-XT/issues"
+  },
+  "homepage": "https://github.com/nonameb3/E-Commerce-XT#readme"
+}
