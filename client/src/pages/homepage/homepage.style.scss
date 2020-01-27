@@ -1,0 +1,26 @@
+#jumbotron {
+  .jumbotron {
+    background-image: url("https://cdn.pixabay.com/photo/2017/12/26/09/15/woman-3040029_1280.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 600px;
+  }
+
+  img {
+    width: 100%;
+    max-width: width auto;
+  }
+}
+
+#content {
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .card {
+      margin: 1rem;
+    }
+  }
+}
