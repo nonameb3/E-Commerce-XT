@@ -2,6 +2,8 @@ import React from "react";
 import { withRouter } from "react-router-dom";
 import "./product.style.scss";
 
+import Carousel from '../../components/carousel/carousel.component';
+
 function productComponents(props) {
   console.log(props.match.params.productId);
   return (
@@ -9,7 +11,9 @@ function productComponents(props) {
       <div className='content container'>
         <p>HOME › COOP › EMPIRE STRIKES BACK DRESS</p>
         <div className='content-items'>
-          <div className='images'>image</div>
+          <div className='images'>
+            <Carousel/>
+          </div>
           <div className='item'>
             <div className='item-quantity'>
               <p>QUANTITY</p>

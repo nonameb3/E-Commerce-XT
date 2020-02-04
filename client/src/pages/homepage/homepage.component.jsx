@@ -1,10 +1,9 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 import "./homepage.style.scss";
 
 import ShopCard from "../../components/shopCard/shopCard.component";
-
 import { data } from "./shopData";
-
 
 function homepageComponent() {
   return (
@@ -28,7 +27,9 @@ function homepageComponent() {
           </h1>
           <div className='card-container'>
             {data.map(item => (
-              <ShopCard key={item.id} {...item} />
+              <Link to={`/product/${item.id}`}>
+                <ShopCard key={item.id} {...item} />
+              </Link>
             ))}
           </div>
         </div>

@@ -1,7 +1,8 @@
 import React from "react";
+import { withRouter } from 'react-router-dom';
 import "./navbar.style.scss"
 
-function navbarComponent() {
+function navbarComponent(props) {
   return (
     <section id='navbar'>
       <nav id='nav-one' className='navbar navbar-expand-sm'>
@@ -14,7 +15,7 @@ function navbarComponent() {
       </nav>
       <nav id='nav-two' className='navbar navbar-expand-md navbar-light'>
         <div className='container'>
-          <h1 id='logo' className='navbar'>
+          <h1 id='logo' className='navbar' onClick={() => props.history.push("/")}>
             Show Me
           </h1>
           <button
@@ -82,4 +83,4 @@ function navbarComponent() {
   );
 }
 
-export default navbarComponent;
+export default withRouter(navbarComponent);

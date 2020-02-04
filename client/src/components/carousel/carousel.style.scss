@@ -1,0 +1,10 @@
+.carousel {
+  #carouselExampleIndicators .carousel-inner .carousel-item {
+    background-color: lawngreen;
+    img {
+      width: 700px;
+      height: 700px;
+      object-fit: cover;
+    }
+  }
+}
