@@ -1,4 +1,8 @@
 #navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+
   #nav-one {
     background-color: #262626;
     height: 30px;

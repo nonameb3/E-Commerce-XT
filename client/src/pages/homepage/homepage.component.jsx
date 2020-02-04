@@ -1,19 +1,14 @@
 import React from "react";
 import "./homepage.style.scss";
 
-import Navbar from "../../components/navbar/navbar.component";
 import ShopCard from "../../components/shopCard/shopCard.component";
 
 import { data } from "./shopData";
 
-function renderCard(item) {
-  return <ShopCard {...item} />;
-}
 
 function homepageComponent() {
   return (
     <React.Fragment>
-      <Navbar />
       <section id='jumbotron'>
         <div className='jumbotron jumbotron-fluid d-flex align-items-end'>
           <div className='container '>
