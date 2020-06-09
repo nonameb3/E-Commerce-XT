@@ -12,6 +12,23 @@
   #nav-two {
     background-color: #fffffa;
     height: 80px;
+
+    .container {
+      flex-wrap: nowrap;
+
+      .navbar-nav{
+        flex-direction: row;
+        margin: 1rem;
+      }
+
+      .nav-item {
+        @media screen and(max-width: 620px) {
+          a {
+            display: none ;
+          }
+        }
+      }
+    }
   }
 
   #logo {

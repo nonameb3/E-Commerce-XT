@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./homepage.style.scss";
 
 import ShopCard from "../../components/shopCard/shopCard.component";
@@ -20,7 +20,7 @@ function homepageComponent() {
         </div>
       </section>
 
-      <section id="content">
+      <section id='content'>
         <div className='container'>
           <h1 className='text-center text-uppercase text-monospace font-weight-bold mb-4'>
             Hot Products !

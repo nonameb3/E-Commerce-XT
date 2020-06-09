@@ -1,6 +1,6 @@
 import React from "react";
-import { withRouter } from 'react-router-dom';
-import "./navbar.style.scss"
+import { withRouter } from "react-router-dom";
+import "./navbar.style.scss";
 
 function navbarComponent(props) {
   return (
@@ -15,23 +15,14 @@ function navbarComponent(props) {
       </nav>
       <nav id='nav-two' className='navbar navbar-expand-md navbar-light'>
         <div className='container'>
-          <h1 id='logo' className='navbar' onClick={() => props.history.push("/")}>
+          <h1
+            id='logo'
+            className='navbar'
+            onClick={() => props.history.push("/")}>
             Show Me
           </h1>
-          <button
-            className='navbar-toggler'
-            type='button'
-            data-toggle='collapse'
-            data-target='#navbarNavAltMarkup'
-            aria-controls='navbarNavAltMarkup'
-            aria-expanded='false'
-            aria-label='Toggle navigation'>
-            <span className='navbar-toggler-icon'></span>
-          </button>
-          <div
-            className='collapse d-flex justify-content-end'
-            id='navbarNavAltMarkup'>
-            <ul className='navbar-nav mr-auto'>
+          <div className='d-flex justify-content-end'>
+            <ul className='navbar-nav'>
               <li className='nav-item'>
                 <a className='nav-link' href='#'>
                   Shop
@@ -67,13 +58,15 @@ function navbarComponent(props) {
                 </div>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' href='#'>
-                  <i className='fas fa-shopping-cart' style={{fontSize:'100%'}}></i>
+                <button className='nav-link' href='#'>
+                  <i
+                    className='fas fa-shopping-cart'
+                    style={{ fontSize: "100%" }}></i>
                   <span className='badge badge-warning' id='lblCartCount'>
                     {" "}
                     5{" "}
                   </span>
-                </a>
+                </button>
               </li>
             </ul>
           </div>
